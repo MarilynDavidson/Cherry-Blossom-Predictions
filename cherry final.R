@@ -133,5 +133,6 @@ Vancouver <- round(Vancouver)
 
 year<-c(2023:2032)
 final<- data.frame(year,japan[1:10],swiss[1:10],USA[1:10],Vancouver[1:10])
-write.table(final,'C:\Users\mdavi\Desktop\school\spring 2023\STAT 490',sep = ",",rownames=FALSE)
+colnames(final)<-c('year','kyoto','liestal','washingtondc','vancouver')
+write.csv(final,'FinalPredictions.csv',rownames=FALSE)
 
